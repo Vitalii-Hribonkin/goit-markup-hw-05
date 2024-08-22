@@ -500,9 +500,8 @@
         <p class="p-modal">Leave your contacts and we will call you back</p>
         <form class="forms-label">
           <div class="div-container-form">
+            <label for="user-name" class="label-modal-form">Name</label>
             <div class="div-container-input-modal">
-              <label for="user-name" class="label-modal-form">Name</label>
-
               <input
                 type="text"
                 class="input-modal"
@@ -510,13 +509,16 @@
                 name="user-name"
                 required
               />
+
               <svg class="modal-icon-svg" width="18" height="24">
                 <use href="./images/icons.svg#icon-person-icon"></use>
               </svg>
             </div>
-            <div class="div-container-input-modal">
-              <label for="user-tell" class="label-modal-form">Phone</label>
+          </div>
 
+          <div class="div-container-input-modal">
+            <label for="user-tell" class="label-modal-form">Phone</label>
+            <div>
               <input type="tel" class="input-modal" id="user-tell" /><svg
                 class="modal-icon-svg"
                 width="18"
@@ -525,9 +527,11 @@
                 <use href="./images/icons.svg#icon-telephone-icon"></use>
               </svg>
             </div>
-            <div class="div-container-input-modal">
-              <label for="user-email" class="label-modal-form">Email</label>
+          </div>
 
+          <div>
+            <label for="user-email" class="label-modal-form">Email</label>
+            <div>
               <input type="email" class="input-modal" id="user-email" /><svg
                 class="modal-icon-svg"
                 width="18"
@@ -536,36 +540,35 @@
                 <use href="./images/icons.svg#icon-email-icon"></use>
               </svg>
             </div>
-            <div class="div-container-text-area-modal">
-              <label for="user-comment" class="label-modal-form-comment"
-                >Comment</label
-              >
-              <textarea
-                class="textarea-modal"
-                id="user-comment"
-                placeholder="Text input"
-              ></textarea>
-            </div>
-            <div class="div-container-checkbox-modal">
-              <input
-                type="checkbox"
-                id="user-privacy"
-                class="checkbox visualy-hidden"
-                value="true"
-                name="user-privacy"
-              />
-              <label for="user-privacy" class="custom-checkbox-label">
-                <span class="custom-checkbox">
-                  <svg width="10" height="8" class="icon-checkbox">
-                    <use href="./images/icons.svg#icon-accept-icon"></use>
-                  </svg>
-                </span>
-                I accept the terms and conditions of the
-                <a class="a-modal-checkbox" href="">Privacy Policy</a>
-              </label>
-            </div>
-            <button class="button-modal" type="button">Send</button>
           </div>
+
+          <div class="div-container-text-area">
+            <label for="user-comment" class="label-modal-form">Comment</label>
+            <textarea
+              class="textarea-modal"
+              id="user-comment"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="div-container-checkbox-modal">
+            <input
+              type="checkbox"
+              id="user-privacy"
+              class="checkbox visualy-hidden"
+              value="true"
+              name="user-privacy"
+            />
+            <label for="user-privacy" class="custom-checkbox-label">
+              <span class="custom-checkbox">
+                <svg width="10" height="8" class="icon-checkbox">
+                  <use href="./images/icons.svg#icon-accept-icon"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="a-modal-checkbox" href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="button-modal" type="button">Send</button>
         </form>
       </div>
     </div>
