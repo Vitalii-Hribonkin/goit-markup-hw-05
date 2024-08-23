@@ -691,7 +691,6 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 .input-modal:focus+.modal-icon-svg{
 fill: #4d5ae5;
-transition: fill 300ms linear;
 }
 
 .div-container-text-area{
@@ -742,7 +741,6 @@ border-radius: 2px;
     fill: transparent;
     color: #8e8f99;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    display: inline-flex;
     align-items: center;
     justify-content: center;
 }
